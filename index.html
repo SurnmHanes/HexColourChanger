@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">    
+</head>
+    <body>
+        <title>Lighten / Darken Colour</title>
+        
+        <div class="container">
+            <h1 class="title">Colour Lighten/Darken</h1>
+        
+            <label for ="hexInput">Choose Starting Hex Colour</label> 
+            <input type="text" name="hex" id="hexInput" placeholder="#000000"/>
+        
+            <div class="toggle">
+                <!-- LHS text for toggle -->
+                <p class="toggle-text" id="lightenText">Lighten</p>
+                                
+                <!-- toggle button -->
+                <div id="toggleBtn" class="toggle-btn ">
+                    <div class="inner-circle">
+                    </div>
+                </div>
+                
+                <!-- RHS text for toggle -->
+                <p class="toggle-text unselected" id="darkenText">Darken</p>
+                
+            </div>
+        
+            <label for = "slider" id="sliderText">0%</label>
+            <input type="range" name="slider" min="0" max="100" value="0" step="1" class="slider" id="slider">
+        
+            <p>Current Colour</p>
+            
+            <div id="inputColour" class="box"></div>
+            
+            <p id="alteredColourText">Altered Colour</p>
+            
+            <div id="alteredColour" class="box"></div>
+        </div>
+
+
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>

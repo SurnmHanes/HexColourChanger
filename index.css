@@ -1,0 +1,84 @@
+body {
+    font-family: "Share Tech", san-serif;
+    background-color: #0395c6;
+    color: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 10px
+}
+
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+input {
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.box {
+    height: 100px;
+    width: 100%;
+    background-color: #9dd7e1;
+    margin-bottom: 25px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 40px 0;
+}
+
+.toggle-text {
+    font-size: 18px;
+}
+
+
+.toggle-btn {
+    height: 30px;
+    width: 70px;
+    background-color: #9dd7e1;
+    border-radius: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.inner-circle {
+    height: 30px;
+    width: 30px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle {
+    transform: translateX(40px);
+    background-color: #0395c6;
+}
+
+.toggle-btn.toggled {
+    background-color: #9dd7e1;
+}
+
+.unselected {
+    opacity: 0.25;
+}
