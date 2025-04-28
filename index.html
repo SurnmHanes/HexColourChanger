@@ -11,10 +11,7 @@
         
         <div class="container">
             <h1 class="title">Colour Lighten/Darken</h1>
-        
-            <label for ="hexInput">Choose Starting Hex Colour</label> 
-            <input type="text" name="hex" id="hexInput" placeholder="#000000"/>
-        
+            
             <div class="toggle">
                 <!-- LHS text for toggle -->
                 <p class="toggle-text" id="lightenText">Lighten</p>
@@ -27,9 +24,13 @@
                 
                 <!-- RHS text for toggle -->
                 <p class="toggle-text unselected" id="darkenText">Darken</p>
-                
+            
             </div>
-        
+            <label for ="hexInput">Choose Starting Hex Colour</label> 
+            <input type="text" name="hex" id="hexInput" />
+            
+            <p id="userInstruction">Choose Percentage to Lighten</p>
+            <br>
             <label for = "slider" id="sliderText">0%</label>
             <input type="range" name="slider" min="0" max="100" value="0" step="1" class="slider" id="slider">
         
