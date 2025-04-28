@@ -82,3 +82,9 @@ input[type="text"] {
 .unselected {
     opacity: 0.25;
 }
+
+#userInstruction {
+    margin-top: 100px;
+    font-size: 20px;
+}
+
