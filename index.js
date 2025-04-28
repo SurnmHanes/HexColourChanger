@@ -7,6 +7,7 @@ let alteredColourText = document.getElementById('alteredColourText')
 let lightenText = document.getElementById('lightenText')
 let darkenText = document.getElementById('darkenText')
 let toggleBtn = document.getElementById('toggleBtn')
+let instuctionText = document.getElementById('userInstruction')
 
 hexInput.addEventListener("keyup", function() {
 
@@ -109,10 +110,13 @@ toggleBtn.addEventListener('click', function() {
     if (lightenText.classList.contains("unselected")) {
         lightenText.classList.remove("unselected")
         darkenText.classList.add("unselected")
+        instuctionText.innerHTML = "Choose Percentage to Lighten"
+
         
     } else {
         lightenText.classList.add("unselected")
         darkenText.classList.remove("unselected")
+        instuctionText.innerHTML = "Choose Percentage to Darken"
     }
 })
 
@@ -152,9 +156,6 @@ function reset() {
 
     alteredColourText.innerHTML = "Altered Colour"
     alteredColour.style.backgroundColor = inputColour.style.backgroundColor
-
-
 } 
-
 
 
